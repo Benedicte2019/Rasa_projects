@@ -1,0 +1,60 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - info_pih
+  - causes_pih
+  - meals_avoid_pih
+  - symptoms_pih
+  - normal_bp
+  - palliate_pih
+  - conseq_pih
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great. How can I help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_causes:
+  - text: "the causes of PIH are: pre-existing hypertension, kidney disease, diabetes, pregnancy induced hypertension with previous pregnancy, mother's age younger than 20 or older than 40, multiple fetuses, unsufficient blood flow to the uterus"
+  
+  utter_symptoms:
+  - text: " among the symptoms are severe headaches, blood in urine, dizziness, blurred vision, excessive swelling of the feet and hands, rapid heartbeat"
+  
+  utter_conseq:
+  - text: "PIH can prevent the placenta from getting enough blood, baby get less oxygen, low birth weight to the baby"
+  
+  utter_meals:
+  - text: "Eating a diet rich in vegetables and fish, eat different fruits,eat low-fat diet"
+  
+  utter_normal_bp:
+  - text: "A normal blood pressure reading is from 90/60 mm Hg to 120/80 mm Hg"
+  
+  utter_info_pih:
+  - text: "Pregnancy induced hypertension is the development of new hypertension in a pregnant woman after 20 weeks' gestation"
+  
+  utter_palliate_pih:
+  - text: "there is no specific treatment, but it must be monitored closely and follow the advice of your doctor"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
